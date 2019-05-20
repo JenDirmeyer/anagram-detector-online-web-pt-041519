@@ -8,9 +8,11 @@ class Anagram
   end
   
   def match(array)
-    array.collect do  |candidate| 
-      candidate.split.include?(@word.split)
-      binding.pry
+    anagrams = []
+    array.each do  |candidate| 
+      if candidate.split.include?(@word.split)
+        anagrams << candidate
+      end  
     end  
   end  
 end  
