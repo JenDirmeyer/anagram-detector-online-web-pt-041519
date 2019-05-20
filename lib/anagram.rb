@@ -8,6 +8,7 @@ class Anagram
   
   def match(array)
     array.collect do  |candidate| 
+      binding.pry
       candidate.split.include?(@word.split)
       binding.pry
     end  
