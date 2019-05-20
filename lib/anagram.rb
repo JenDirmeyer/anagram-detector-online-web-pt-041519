@@ -10,12 +10,7 @@ class Anagram
   def match(array)
     anagrams = []
     array.each do  |candidate| 
-      @word.split("").collect do |letter|
-        candidate.split("").include?(letter) ? true : false
-      end 
-      
-            
-      end  
+     @word.split("").sort == candidate.split("").sort ? anagrams << candidate
     end  
     anagrams
   end  
