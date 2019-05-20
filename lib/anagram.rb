@@ -14,5 +14,6 @@ class Anagram
         anagrams << candidate
       end  
     end  
+    anagrams
   end  
 end  
