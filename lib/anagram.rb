@@ -8,6 +8,6 @@ class Anagram
   
   def match(array)
     wrd_arry = @word.split
-    array.collect {|candidate| @word.match(/\b[candidate] \b/)}
+    array.collect {|candidate| @word.match(/\b[candidate][candidate][candidate][candidate][candidate]\b/)}
   end  
 end  
