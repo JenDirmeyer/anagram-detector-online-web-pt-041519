@@ -11,7 +11,7 @@ class Anagram
     anagrams = []
     array.each do  |candidate| 
       binding.pry
-      if candidate.split.include?(@word.split)
+      if candidate.split("").include?(@word.split)
         anagrams << candidate
       end  
     end  
