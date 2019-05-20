@@ -7,6 +7,6 @@ class Anagram
   end
   
   def match(array)
-    array.collect {|word| word.match(/[@word]/)}
+    array.collect {|word| word.match(/\b \b/)}
   end  
 end  
