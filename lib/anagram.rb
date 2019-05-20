@@ -12,6 +12,7 @@ class Anagram
     array.each do  |candidate| 
       if candidate.split.include?(@word.split)
         anagrams << candidate
+        binding.pry
       end  
     end  
     anagrams
